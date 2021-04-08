@@ -18,6 +18,8 @@ var routes []Route
 
 func init() {
 	register("POST", "/api/addUser", controller.AddData, nil)
+	register("POST", "/api/deleteUser", controller.DeleteData, nil)
+	register("POST", "/api/UpdateUser", controller.UpdateData, nil)
 	register("POST", "/api/login", controller.Login, nil)
 	register("GET", "/api/GetPassword/{user}", controller.GetPassword, nil)
 }
